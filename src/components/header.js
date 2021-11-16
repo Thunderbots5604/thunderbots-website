@@ -13,7 +13,7 @@ const Header = ({ siteTitle }) => (
     <div
       style={{
         margin: `0 auto`,
-        padding: `0.5rem 0.5rem`,
+        padding: `1rem 1rem`,
       }}
     >
       <Link to="/">
