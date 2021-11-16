@@ -6,7 +6,7 @@ import { StaticImage } from "gatsby-plugin-image"
 const Header = ({ siteTitle }) => (
   <header
     style={{
-      background: `3498db`,
+      background: `#3498db`,
       marginBottom: `1.45rem`,
     }}
   >
