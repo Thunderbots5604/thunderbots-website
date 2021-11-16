@@ -16,12 +16,14 @@ const Header = ({ siteTitle }) => (
         padding: `0.5rem 0.5rem`,
       }}
     >
-      <StaticImage
-        src="../images/thunderbots-logo-complex-white.PNG"
-        formats={['auto']}
-        alt='Thunderbots Logo'
-        loading='eager'
-      />
+      <Link to="/">
+        <StaticImage
+          src="../images/thunderbots-logo-complex-white.PNG"
+          formats={['auto']}
+          alt='Thunderbots Logo'
+          loading='eager'
+        />
+      </Link>
     </div>
   </header>
 )
