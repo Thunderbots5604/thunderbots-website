@@ -16,19 +16,12 @@ const Header = ({ siteTitle }) => (
         padding: `0.5rem 0.5rem`,
       }}
     >
-      <div
-        style = {{
-          width: '0.125rem'
-        }}
-      >
-        <StaticImage
-          src="../images/thunderbots-logo-complex-white.PNG"
-          
-          formats={['auto']}
-          alt='Thunderbots Logo'
-          loading='eager'
-        />
-      </div>
+      <StaticImage
+        src="../images/thunderbots-logo-complex-white.PNG"
+        formats={['auto']}
+        alt='Thunderbots Logo'
+        loading='eager'
+      />
       <h1 style={{ margin: 0 }}>
         <Link
           to="/"
