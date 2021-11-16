@@ -1,6 +1,12 @@
 module.exports = {
   siteMetadata: {
     title: `Thunderbots 5604`,
+      menuLinks: [
+        {
+          name:'Home',
+          link:'/'
+        }
+      ],
     description: `Mountain View's FTC robotics team's website`,
     author: `@gatsbyjs, Dao Zhu`,
     siteUrl: `https://gatsbystarterdefaultsource.gatsbyjs.io/`,
