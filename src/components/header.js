@@ -22,7 +22,7 @@ const Header = ({ siteTitle }) => (
         }}
       >
         <StaticImage
-          src="../images/thunderbots-logo-complex-white.png"
+          src="../images/thunderbots-logo-complex-white.PNG"
           
           formats={['auto']}
           alt='Thunderbots Logo'
