@@ -11,44 +11,53 @@ import { useStaticQuery, graphql } from "gatsby"
 
 import Header from "./header"
 import "./layout.css"
+import { Helmet } from "react-helmet"
 
 const Layout = ({ children }) => {
-  const data = useStaticQuery(graphql`
-    query SiteTitleQuery {
-      site {
-        siteMetadata {
-          title
-            menuLinks {
-              name
-              link
-            }
+  <StaticQuery
+    query={graphql`
+      query SiteTitleQuery {
+        site {
+          siteMetadata {
+            title
+              menuLinks {
+                name
+                link
+              }
+          }
         }
       }
-    }
-  `)
-
-  return (
-    <>
-      <Header menuLinks={data.site.siteMetadata.menuLinks} siteTitle={data.site.siteMetadata?.title} />
-      <div
-        style={{
-          margin: `0 auto`,
-          padding: `0 0.5rem 0.5rem`,
-        }}
-      >
-        <main>{children}</main>
-        <footer
-          style={{
-            marginTop: `2rem`,
-          }}
+    `}
+    render={data => (
+      <React.Fragment>
+        <Helmet
+          title={'Thunderbots 5604'}
+          meta={[
+            {name:'description', content:'Mountain View\'s FTC robotics team\'s website'},
+          ]}
         >
-          © {new Date().getFullYear()}, Built with
-          {` `}
-          <a href="https://www.gatsbyjs.com">Gatsby</a>
-        </footer>
-      </div>
-    </>
-  )
+        </Helmet>
+        <Header menuLinks={data.site.siteMetadata.menuLinks} siteTitle={data.site.siteMetadata?.title} />
+          <div
+            style={{
+              margin: `0 auto`,
+              padding: `0 0.5rem 0.5rem`,
+            }}
+          >
+            <main>{children}</main>
+          <footer
+            style={{
+              marginTop: `2rem`,
+            }}
+          >
+            © {new Date().getFullYear()}, Built with
+            {` `}
+            <a href="https://www.gatsbyjs.com">Gatsby</a>
+          </footer>
+        </div>
+      </React.Fragment>
+    )}
+  />
 }
 
 Layout.propTypes = {
