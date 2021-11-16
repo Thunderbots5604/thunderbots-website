@@ -13,7 +13,7 @@ const Header = ({ siteTitle }) => (
     <div
       style={{
         margin: `0 auto`,
-        padding: `1rem 1rem`,
+        padding: `0.75rem 0.75rem`,
       }}
     >
       <Link to="/">
@@ -33,7 +33,7 @@ const Header = ({ siteTitle }) => (
                   key={link.name}
                   style={{
                     listStyleType: `none`,
-                    padding: `1rem`,
+                    padding: `0.75rem`,
                   }}
                 >
                   <Link style={{ color: `white` }} to={link.link}>
