@@ -1,6 +1,7 @@
 import * as React from "react"
 import PropTypes from "prop-types"
 import { Link } from "gatsby"
+import { StaticImage } from "gatsby-plugin-image"
 
 const Header = ({ siteTitle }) => (
   <header
@@ -16,6 +17,11 @@ const Header = ({ siteTitle }) => (
         padding: `0.5rem 0.5rem`,
       }}
     >
+      <StaticImage
+        src="../images/thunderbots-logo-complex-white.png"
+        width='0.125rem'
+        formats={['auto']}
+      />
       <h1 style={{ margin: 0 }}>
         <Link
           to="/"
