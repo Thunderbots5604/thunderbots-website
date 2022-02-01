@@ -4,7 +4,7 @@ module.exports = {
       menuLinks: [
         {
           name:'Home',
-          link:'/'
+          link:'/index'
         },
         {
           name:'page2',
