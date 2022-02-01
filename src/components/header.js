@@ -19,7 +19,7 @@ const Header = ({ siteTitle }) => (
         alignItems: "left",
       }}
     >
-      <Link to="/index">
+      <Link to="/">
         <StaticImage
           src="../images/thunderbots-logo-complex-white.PNG"
           formats={['auto']}
@@ -39,7 +39,7 @@ const Header = ({ siteTitle }) => (
     >
       <h1 style={{ margin: 0, flex: 1}}>
         <Link
-          to="/index"
+          to="/"
           style={{
             color: "white",
             textDecoration: "none",
