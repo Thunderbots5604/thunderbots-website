@@ -14,6 +14,9 @@ const Header = ({ siteTitle }) => (
       style={{
         margin: `0 auto`,
         padding: `0.75rem 0.75rem`,
+        display: "flex",
+        justifyItems: "space-between",
+        alignItems: "left",
       }}
     >
       <Link to="/">
@@ -25,25 +28,36 @@ const Header = ({ siteTitle }) => (
         />
       </Link>
     </div>
-    <div>
-          <nav>
-            <ul style={{ display: "flex", flex: 1 }}>
-              {menuLinks.map(link => (
-                <li
-                  key={link.name}
-                  style={{
-                    listStyleType: `none`,
-                    padding: `0.75rem`,
-                  }}
-                >
-                  <Link style={{ color: `white` }} to={link.link}>
-                    {link.name}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </nav>
-        </div>
+    <div
+      style={{
+        margin: "0 auto",
+        padding: "0.75rem 0.75 rem",
+        display: "flex",
+        justifyItems: "space-between",
+        alignItems: "right",
+      }}
+    >
+      <h1 style={{ margin: 0, flex: 1}}>
+        <Link
+          to="/"
+          style={{
+            color: "white",
+            textDecoration: "none",
+          }}
+        >
+          Home
+        </Link>
+        <Link
+          to="/page-2"
+          style={{
+            color: "white",
+            textDecoration: "none",
+          }}
+        >
+          Page 2
+        </Link>
+      </h1>
+    </div>
   </header>
 )
 
