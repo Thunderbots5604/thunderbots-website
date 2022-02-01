@@ -7,15 +7,11 @@
 
 import * as React from "react"
 import PropTypes from "prop-types"
-import { useStaticQuery, StaticQuery, graphql } from "gatsby"
+import { StaticQuery, graphql } from "gatsby"
 
 import Header from "./header"
 import "./layout.css"
 import { Helmet } from "react-helmet"
-
-const Layout2 = useStaticQuery(
-  
-)
 
 const Layout = ({ children }) => {
   <StaticQuery
@@ -41,7 +37,7 @@ const Layout = ({ children }) => {
           ]}
         >
         </Helmet>
-        <Header menuLinks={data.site.siteMetadata.menuLinks} siteTitle={data.site.siteMetadata?.title} />
+        <Header menuLinks={data.site.siteMetadata.menuLinks} siteTitle={data.site.siteMetadata.title} />
           <div
             style={{
               margin: `0 auto`,
