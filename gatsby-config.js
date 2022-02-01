@@ -9,6 +9,14 @@ module.exports = {
         {
           name:'page2',
           link:'/page-2'
+        },
+        {
+          name:'404',
+          link:'/404'
+        },
+        {
+          name:'using-ssr',
+          link:'using-ssr'
         }
       ],
     description: `Mountain View's FTC robotics team's website`,
