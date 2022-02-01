@@ -14,9 +14,9 @@ const Header = ({ siteTitle }) => (
       style={{
         margin: `0 auto`,
         padding: `0.75rem 0.75rem`,
-        display: "flex",
-        justifyItems: "space-between",
-        alignItems: "left",
+        display: `flex`,
+        justifyItems: `space-between`,
+        alignItems: `left`,
       }}
     >
       <Link to="/">
@@ -30,11 +30,11 @@ const Header = ({ siteTitle }) => (
     </div>
     <div
       style={{
-        margin: "0 auto",
-        padding: "0.75rem 0.75 rem",
-        display: "flex",
-        justifyItems: "space-between",
-        alignItems: "right",
+        margin: `0 auto`,
+        padding: `0.75rem 0.75 rem`,
+        display: `flex`,
+        justifyItems: `space-between`,
+        alignItems: `right`,
       }}
     >
       <h1 style={{ margin: 0, flex: 1}}>

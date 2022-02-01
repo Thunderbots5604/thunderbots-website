@@ -7,11 +7,15 @@
 
 import * as React from "react"
 import PropTypes from "prop-types"
-import { StaticQuery, graphql } from "gatsby"
+import { useStaticQuery, StaticQuery, graphql } from "gatsby"
 
 import Header from "./header"
 import "./layout.css"
 import { Helmet } from "react-helmet"
+
+const Layout2 = useStaticQuery(
+  
+)
 
 const Layout = ({ children }) => {
   <StaticQuery
@@ -45,7 +49,7 @@ const Layout = ({ children }) => {
               padding: `0 0.5rem 0.5rem`,
             }}
           >
-            <main>{children}</main>
+            {children}
           <footer
             style={{
               marginTop: `2rem`,
@@ -54,6 +58,7 @@ const Layout = ({ children }) => {
             © {new Date().getFullYear()}, Built with
             {` `}
             <a href="https://www.gatsbyjs.com">Gatsby</a>
+            , Website by Dao Zhu
           </footer>
         </div>
       </React.Fragment>
