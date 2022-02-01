@@ -5,6 +5,10 @@ module.exports = {
         {
           name:'Home',
           link:'/'
+        },
+        {
+          name:'page2',
+          link:'/page-2'
         }
       ],
     description: `Mountain View's FTC robotics team's website`,
